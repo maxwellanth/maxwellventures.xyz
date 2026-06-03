@@ -1,0 +1,41 @@
+# Asset Targets
+
+This file records the approved final asset destinations for the website.
+
+## Logos
+
+- `public/brand/logo-primary.webp`
+- `public/brand/logo-horizontal.webp`
+- `public/brand/logo-mark.webp`
+- `public/brand/logo-light.svg` or `.png`
+- `public/brand/logo-dark.svg` or `.png`
+
+## Team Photos
+
+- `public/images/team/team-group.webp`
+- `public/images/team/max-fullbody.webp`
+- `public/images/team/max-headshot.webp`
+- `public/images/team/alexander-fullbody.webp`
+- `public/images/team/alexander-headshot.webp`
+- `public/images/team/rae-fullbody.webp`
+- `public/images/team/rae-headshot.webp`
+
+## Backgrounds
+
+- `public/images/backgrounds/pnw-bridge-hero-desktop.webp`
+- `public/images/backgrounds/pnw-bridge-hero-mobile.webp`
+- `public/images/backgrounds/parchment-texture.webp`
+- `public/images/backgrounds/mountain-line-art.svg` or `.png`
+- `public/images/backgrounds/bridge-line-art.svg` or `.png`
+
+## Social Preview
+
+- `public/social/og-image.png`
+
+## Browser and Phone Icons
+
+- `app/favicon.ico`
+- `app/icon.png`
+- `app/apple-icon.png`
+
+The app icon should use the approved Maxwell Ventures logo mark.

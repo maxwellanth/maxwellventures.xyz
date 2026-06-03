@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f1ea;
+  --foreground: #0f2e28;
+}
+
+@theme inline {
+  --color-background: #f3f1ea;
+  --color-foreground: #0f2e28;
+  --color-evergreen: #0f2e28;
+  --color-forest-green: #234b3b;
+  --color-sage-mist: #8fa796;
+  --color-pale-stone: #f3f1ea;
+  --color-warm-gold: #c9a05a;
+  --color-muted-bronze: #8e6f4a;
+  --color-soft-gray-green: #b5bfb6;
+  --font-sans: "Montserrat", "Montserrat Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cinzel", "Cinzel Fallback", Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: #c9a05a;
+  color: #0f2e28;
+}
+
+.parchment {
+  background-image:
+    linear-gradient(90deg, rgba(143, 167, 150, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(142, 111, 74, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
