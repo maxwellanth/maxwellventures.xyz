@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cinzel, Montserrat } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { defaultDescription, siteUrl } from "@/lib/metadata";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -17,19 +18,20 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maxwellventures.xyz"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Maxwell Ventures",
     template: "%s | Maxwell Ventures",
   },
-  description:
-    "Practical AI systems, websites, and digital operations for local businesses.",
+  description: defaultDescription,
   applicationName: "Maxwell Ventures",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Maxwell Ventures",
-    description:
-      "Practical AI systems, websites, and digital operations for local businesses.",
-    url: "https://maxwellventures.xyz",
+    description: defaultDescription,
+    url: "/",
     siteName: "Maxwell Ventures",
     images: [
       {
@@ -40,6 +42,12 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maxwell Ventures",
+    description: defaultDescription,
+    images: ["/social/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",

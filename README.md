@@ -1,16 +1,17 @@
 # Maxwell Ventures Website
 
-Phase 1 foundation for `maxwellventures.xyz`.
+Public website for `maxwellventures.xyz`.
 
 ## Current Status
 
-- Draft 2 website foundation created with approved Maxwell Ventures assets.
+- Version 1 is the approved public site at `https://www.maxwellventures.xyz`.
+- Version 2 is available only through the private review route listed below.
 - TypeScript, Tailwind CSS, and ESLint are configured.
 - Required routes and reusable layout components are in place.
 - Asset intake folders and documentation are prepared.
 - Approved SVG source assets have been preserved, and optimized website-ready WebP/PNG/ICO files live under `public/` and `app/`.
-- Production Vercel deployment is ready at `https://maxwell-ventures-caxwe9hbp-maxwellanth-7601s-projects.vercel.app`.
-- `maxwellventures.xyz` is attached in Vercel but still needs Namecheap DNS records updated away from parking.
+- Public canonical host for this branch: `https://www.maxwellventures.xyz`.
+- Production changes require Max approval before publishing.
 
 ## Local Setup
 
@@ -35,6 +36,16 @@ Open `http://localhost:3001`.
 ```bash
 npm run build
 ```
+
+## Private Review Preview
+
+Use `/studio-preview-9k4m2x` for the current unlisted website review candidate. It is intentionally excluded from navigation and the sitemap, marked `noindex`, and disallowed in `robots.txt`.
+
+Version 2 preview URL:
+
+`https://www.maxwellventures.xyz/studio-preview-9k4m2x`
+
+Workflow details: `docs/nightly-preview-workflow.md`
 
 ## Project Structure
 
@@ -63,3 +74,4 @@ Current approved source assets have been copied into the Desktop intake folders 
 - Do not change Namecheap nameservers unless the full DNS zone, including email records, is preserved first.
 - Preserve the existing Namecheap email-forwarding MX and SPF records during web DNS cleanup.
 - Do not invent testimonials, client names, logos, proof numbers, phone numbers, or portal data.
+- Do not alter `.org`, DNS, MX, SPF, DKIM, or DMARC records without explicit instruction.

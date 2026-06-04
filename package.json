@@ -7,7 +7,9 @@
     "dev:site": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "agent:log": "node scripts/agent-log.mjs",
+    "agent:daily": "node scripts/agent-log.mjs --daily"
   },
   "dependencies": {
     "next": "16.2.7",

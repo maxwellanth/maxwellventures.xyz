@@ -41,3 +41,22 @@ body {
     linear-gradient(rgba(142, 111, 74, 0.06) 1px, transparent 1px);
   background-size: 44px 44px;
 }
+
+.ambient-grid {
+  background-image:
+    linear-gradient(120deg, rgba(201, 160, 90, 0.08), transparent 34%),
+    linear-gradient(90deg, rgba(143, 167, 150, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(143, 167, 150, 0.06) 1px, transparent 1px);
+  background-size: auto, 72px 72px, 72px 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
