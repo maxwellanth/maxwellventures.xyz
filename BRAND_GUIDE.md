@@ -8,6 +8,8 @@ Draft 2 now uses the approved crest logo and team portrait assets as the primary
 
 The public homepage now uses a richer brand-world layer from recent Maxwell Ventures generated art: cinematic Pacific Northwest coastline, evergreen forest, warm gold relief, marble/parchment panels, shield marks, and team-in-studio scenes. Max approved promotion from preview to public on June 4, 2026.
 
+The next private preview direction in `/studio-preview-9k4m2x` expands that world into a fuller mobile-first page system: coastal compass hero, drafting-table service field, audit cockpit, team atelier, route map, and lighthouse contact scene. This direction is draft-only until Max approves promotion.
+
 ## Theme Tokens
 
 - Deep Evergreen: `#0F2E28`
@@ -36,6 +38,7 @@ Fonts are loaded through `next/font/google` in `app/layout.tsx`.
 - Laurel crest or M monogram once approved
 - Mountain, forest, bridge, and natural paper motifs once approved
 - Cinematic coastal and forest imagery for the public homepage and future preview work
+- Mobile compositions that feel intentionally designed rather than compressed from desktop
 
 ## Avoid
 
@@ -71,3 +74,9 @@ Fonts are loaded through `next/font/google` in `app/layout.tsx`.
 - `asset-library/google-photos-maxwell/manifest.csv`
 
 The selected `public/images/brand-world/` derivatives are approved for the public homepage. The broader asset library remains candidate design material unless a specific file is promoted.
+
+## Studio Preview Next Assets
+
+- `public/images/studio-preview-next/`
+
+These files are owner-review material for the unlisted preview route. They are not public homepage assets until Max approves promotion.

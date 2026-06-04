@@ -42,6 +42,22 @@ These assets are approved for the public homepage after Max's June 4, 2026 publi
 - `public/images/brand-world/mv-vertical-coastal-poster.webp`
 - `public/images/brand-world/mv-website-system-mockup.webp`
 
+## Studio Preview Next Assets
+
+These assets are for `/studio-preview-9k4m2x` owner review only. They are generated and composited from local Maxwell Ventures source material and do not include raw Google Photos links, EXIF/GPS metadata, or private local source paths in the committed manifest.
+
+- `public/images/studio-preview-next/next-hero-coast-compass.webp`
+- `public/images/studio-preview-next/next-mobile-hero-coast.webp`
+- `public/images/studio-preview-next/next-drafting-service-field.webp`
+- `public/images/studio-preview-next/next-audit-cockpit-map.webp`
+- `public/images/studio-preview-next/next-mobile-audit-map.webp`
+- `public/images/studio-preview-next/next-mobile-system-card.webp`
+- `public/images/studio-preview-next/next-team-atelier.webp`
+- `public/images/studio-preview-next/next-process-route-map.svg`
+- `public/images/studio-preview-next/next-process-route-map.webp`
+- `public/images/studio-preview-next/next-contact-lighthouse.webp`
+- `public/images/studio-preview-next/manifest.csv`
+
 ## Social Preview
 
 - `public/social/og-image.png`
