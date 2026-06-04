@@ -28,6 +28,20 @@ This file records the approved final asset destinations for the website.
 - `public/images/backgrounds/mountain-line-art.svg` or `.png`
 - `public/images/backgrounds/bridge-line-art.svg` or `.png`
 
+## Brand World Homepage Assets
+
+These assets are approved for the public homepage after Max's June 4, 2026 publish request. The preview route may continue to reuse them for future review passes.
+
+- `public/images/brand-world/mv-coastal-crest-hero.webp`
+- `public/images/brand-world/mv-coastal-wordmark-banner.webp`
+- `public/images/brand-world/mv-dual-coastal-hero-study.webp`
+- `public/images/brand-world/mv-mist-forest-poster.webp`
+- `public/images/brand-world/mv-mountain-wordmark-panorama.webp`
+- `public/images/brand-world/mv-storm-coast-poster.webp`
+- `public/images/brand-world/mv-team-studio-wall.webp`
+- `public/images/brand-world/mv-vertical-coastal-poster.webp`
+- `public/images/brand-world/mv-website-system-mockup.webp`
+
 ## Social Preview
 
 - `public/social/og-image.png`
