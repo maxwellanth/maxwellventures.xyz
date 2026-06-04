@@ -10,6 +10,8 @@ The public homepage now uses a richer brand-world layer from recent Maxwell Vent
 
 The next private preview direction in `/studio-preview-9k4m2x` expands that world into a fuller mobile-first page system: coastal compass hero, drafting-table service field, audit cockpit, team atelier, route map, and lighthouse contact scene. This direction is draft-only until Max approves promotion.
 
+The updated private preview hero should open with Maxwell Ventures team presence in the landscape: Max, Alexander, and Rae standing within the Pacific Northwest coastline/mountaintop world, with the crest/logo language integrated into the scene and separate desktop/mobile crops.
+
 ## Theme Tokens
 
 - Deep Evergreen: `#0F2E28`

@@ -48,6 +48,8 @@ These assets are for `/studio-preview-9k4m2x` owner review only. They are genera
 
 - `public/images/studio-preview-next/next-hero-coast-compass.webp`
 - `public/images/studio-preview-next/next-mobile-hero-coast.webp`
+- `public/images/studio-preview-next/next-hero-team-coast-desktop.webp`
+- `public/images/studio-preview-next/next-hero-team-coast-mobile.webp`
 - `public/images/studio-preview-next/next-drafting-service-field.webp`
 - `public/images/studio-preview-next/next-audit-cockpit-map.webp`
 - `public/images/studio-preview-next/next-mobile-audit-map.webp`

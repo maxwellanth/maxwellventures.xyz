@@ -7,8 +7,8 @@ import { auditDeliverables, auditReviewAreas, services, teamMembers } from "@/co
 import { cn } from "@/lib/utils";
 
 const previewAssets = {
-  heroDesktop: "/images/studio-preview-next/next-hero-coast-compass.webp",
-  heroMobile: "/images/studio-preview-next/next-mobile-hero-coast.webp",
+  heroDesktop: "/images/studio-preview-next/next-hero-team-coast-desktop.webp",
+  heroMobile: "/images/studio-preview-next/next-hero-team-coast-mobile.webp",
   drafting: "/images/studio-preview-next/next-drafting-service-field.webp",
   audit: "/images/studio-preview-next/next-audit-cockpit-map.webp",
   auditMobile: "/images/studio-preview-next/next-mobile-audit-map.webp",
@@ -104,27 +104,27 @@ const studioNotes = [
 const {
   props: { srcSet: heroDesktopSrcSet },
 } = getImageProps({
-  alt: "Maxwell Ventures coastal compass brand world",
+  alt: "Maxwell Ventures team on a Pacific Northwest coastal mountain overlook",
   fetchPriority: "high",
-  height: 1100,
+  height: 1350,
   loading: "eager",
   quality: 75,
   sizes: "100vw",
   src: previewAssets.heroDesktop,
-  width: 1600,
+  width: 2400,
 });
 
 const {
   props: { srcSet: heroMobileSrcSet, ...heroImageProps },
 } = getImageProps({
-  alt: "Maxwell Ventures coastal compass brand world",
+  alt: "Maxwell Ventures team on a Pacific Northwest coastal mountain overlook",
   fetchPriority: "high",
-  height: 1400,
+  height: 1920,
   loading: "eager",
   quality: 75,
   sizes: "100vw",
   src: previewAssets.heroMobile,
-  width: 790,
+  width: 1080,
 });
 
 function serviceFor(title: string) {
@@ -203,13 +203,13 @@ export function StudioNextPreview() {
           <source media="(max-width: 767px)" srcSet={heroMobileSrcSet} />
           <img
             {...heroImageProps}
-            alt="Maxwell Ventures coastal compass brand world"
+            alt="Maxwell Ventures team on a Pacific Northwest coastal mountain overlook"
             className="h-full w-full object-cover"
           />
         </picture>
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(10,18,14,0.46)_0%,rgba(10,18,14,0.78)_48%,rgba(10,18,14,0.98)_100%)] md:bg-[linear-gradient(90deg,rgba(10,18,14,0.95)_0%,rgba(10,18,14,0.78)_42%,rgba(10,18,14,0.2)_76%,rgba(10,18,14,0.7)_100%)]"
+          className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(10,18,14,0.62)_0%,rgba(10,18,14,0.62)_48%,rgba(10,18,14,0.68)_100%)] md:bg-[linear-gradient(90deg,rgba(10,18,14,0.95)_0%,rgba(10,18,14,0.78)_42%,rgba(10,18,14,0.16)_76%,rgba(10,18,14,0.4)_100%)]"
         />
         <div
           aria-hidden="true"
@@ -227,20 +227,20 @@ export function StudioNextPreview() {
             </span>
           </div>
 
-          <div className="grid gap-9 py-12 md:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className="grid gap-7 py-8 md:gap-9 md:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div className="max-w-3xl">
-              <p className="mb-5 text-sm font-semibold text-[#f1d59c]">
+              <p className="mb-4 text-sm font-semibold text-[#f1d59c] md:mb-5">
                 Pacific Northwest systems studio
               </p>
-              <h1 className="font-display text-[3.15rem] font-semibold leading-[0.92] text-white sm:text-[5rem] md:text-[6.2rem] lg:text-[7.2rem]">
+              <h1 className="font-display text-[2.82rem] font-semibold leading-[0.92] text-white sm:text-[5rem] md:text-[6.2rem] lg:text-[7.2rem]">
                 Maxwell Ventures
               </h1>
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-[#e2e5d8] sm:text-xl sm:leading-9">
+              <p className="mt-5 max-w-2xl text-base leading-7 text-[#e2e5d8] sm:mt-7 sm:text-xl sm:leading-9">
                 A fuller visual direction for practical AI operations,
                 websites, audits, and digital cleanup: coastal atmosphere,
                 brass mapwork, real team presence, and grounded execution.
               </p>
-              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+              <div className="mt-6 grid gap-3 sm:mt-8 sm:flex sm:flex-wrap">
                 <ButtonLink className="w-full sm:w-auto" href="#studio-services">
                   Explore the work
                 </ButtonLink>
@@ -250,7 +250,7 @@ export function StudioNextPreview() {
               </div>
             </div>
 
-            <div className="grid gap-3 md:grid-cols-3 lg:self-end">
+            <div className="hidden gap-3 md:grid md:grid-cols-3 lg:self-end">
               {studioNotes.map((note, index) => (
                 <div
                   className={cn(
