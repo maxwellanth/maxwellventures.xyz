@@ -3,34 +3,30 @@ import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ResponsiveGrid } from "@/components/ui/responsive-grid";
 import { PageHeader, Section } from "@/components/ui/section";
-import { auditSteps } from "@/content/site";
+import { auditDeliverables, auditReviewAreas, auditSteps } from "@/content/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Local Business Audit",
   description:
-    "A focused review of website, tools, customer communication, and digital operations for local businesses.",
-};
-
-const auditAreas = [
-  "Website structure, mobile usability, and launch blockers",
-  "Customer communication paths and follow-up gaps",
-  "Files, tools, automations, and recurring manual work",
-  "Content systems for campaigns, updates, and local search",
-  "Practical AI opportunities that fit the business",
-  "Immediate cleanup tasks and next-step priorities",
-];
+    "A human-reviewed first step for improving a business website, tools, inquiry paths, and digital operations.",
+  path: "/local-business-audit",
+});
 
 export default function LocalBusinessAuditPage() {
   return (
     <>
       <PageHeader
         title="Local Business Audit"
-        intro="A focused first pass for finding high-leverage digital improvements without turning the work into a vague transformation project."
+        intro="A focused first step for businesses that know their digital operation needs attention but do not yet need a full rebuild."
       >
-        <ButtonLink href="/contact">Start an inquiry</ButtonLink>
+        <ButtonLink href="/contact">Request an audit</ButtonLink>
       </PageHeader>
-      <Section title="Audit sequence" intro="A straightforward path from current-state review to practical next actions.">
-        <div className="grid gap-4 md:grid-cols-3">
+      <Section
+        title="How the audit works"
+        intro="This is a human-reviewed business and website review, not an automated scan or a guaranteed ranking report."
+      >
+        <div className="grid gap-4 md:grid-cols-4">
           {auditSteps.map((step, index) => (
             <Card key={step} title={`Step ${index + 1}`}>
               {step}
@@ -38,12 +34,34 @@ export default function LocalBusinessAuditPage() {
           ))}
         </div>
       </Section>
-      <Section title="Audit focus areas">
+      <Section
+        title="What the audit reviews"
+        intro="The review looks across the public website and the operational details behind it so recommendations stay practical."
+      >
         <ResponsiveGrid>
-          {auditAreas.map((area) => (
+          {auditReviewAreas.map((area) => (
             <Card key={area}>{area}</Card>
           ))}
         </ResponsiveGrid>
+      </Section>
+      <Section
+        tone="evergreen"
+        title="What the client receives"
+        intro="The output is a clear priority map, not a vague transformation deck."
+      >
+        <div className="grid gap-4 md:grid-cols-2">
+          {auditDeliverables.map((item) => (
+            <div
+              className="rounded-md border border-sage-mist/35 bg-white/8 p-5 text-sm leading-7 text-soft-gray-green"
+              key={item}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+        <div className="mt-8">
+          <ButtonLink href="/contact">Start with an audit inquiry</ButtonLink>
+        </div>
       </Section>
     </>
   );

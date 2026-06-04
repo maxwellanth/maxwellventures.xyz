@@ -8,7 +8,7 @@ export function Section({
   title,
   tone = "light",
 }: {
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
   intro?: string;
   title?: string;

@@ -73,9 +73,9 @@ export default function Home() {
       <Section
         tone="evergreen"
         title="Start with the operating reality"
-        intro="The first engagement is a focused review, then a scoped implementation path. No fake proof, no inflated claims, and no unnecessary complexity."
+        intro="The first engagement is a focused review, then a scoped implementation path with honest recommendations, practical boundaries, and no unnecessary complexity."
       >
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-4">
           {auditSteps.map((item, index) => (
             <div
               className="rounded-md border border-sage-mist/35 bg-white/8 p-5"
@@ -93,8 +93,8 @@ export default function Home() {
       </Section>
 
       <Section
-        title="A polished public foundation"
-        intro="Draft 2 uses the approved crest, team visuals, brand palette, and site routes while leaving legal, contact, and biographical details clearly marked for final approval."
+        title="A calm public foundation"
+        intro="The site reflects the Maxwell Ventures standard: clear language, practical service paths, real team visuals, and a restrained visual system."
       >
         <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="rounded-md border border-soft-gray-green bg-white p-6">
@@ -109,13 +109,14 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-base leading-8 text-forest-green">
             <p>
-              The website now has real brand assets, real team visuals, and a
-              mobile-first structure for the public launch path.
+              The public presence should make it easy for a business owner to
+              understand what Maxwell Ventures reviews, what can be improved,
+              and why the first step is usually a focused audit.
             </p>
             <p>
-              Remaining launch details should be reviewed before final domain
-              work: approved contact routing, final legal copy, and final team
-              biographies.
+              The work stays practical: start with the visible friction, choose
+              a useful implementation path, and keep human review in the loop
+              for AI-assisted systems.
             </p>
           </div>
         </div>

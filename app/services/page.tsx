@@ -3,19 +3,21 @@ import { Card } from "@/components/ui/card";
 import { ResponsiveGrid } from "@/components/ui/responsive-grid";
 import { Section, PageHeader } from "@/components/ui/section";
 import { services } from "@/content/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Services",
   description:
-    "Websites, AI systems, digital cleanup, audits, content systems, and practical automation for local businesses.",
-};
+    "Practical consulting for websites, local visibility, AI-assisted operations, content systems, and digital cleanup.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
       <PageHeader
         title="Services"
-        intro="Practical help for local businesses that need cleaner systems, stronger websites, safer accounts, and useful automation."
+        intro="Practical consulting for businesses that need clearer websites, cleaner systems, safer accounts, and useful AI-assisted workflows."
       />
       <Section>
         <ResponsiveGrid>
@@ -26,6 +28,11 @@ export default function ServicesPage() {
           ))}
         </ResponsiveGrid>
       </Section>
+      <Section
+        tone="evergreen"
+        title="How service work starts"
+        intro="Most engagements begin with a focused audit so the first implementation path is based on the actual website, tools, files, customer communication, and maintenance needs."
+      />
     </>
   );
 }

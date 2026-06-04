@@ -37,10 +37,11 @@
 
 ## Pre-Launch
 
-- [ ] Replace placeholder legal copy
+- [x] Replace placeholder legal copy
+- [ ] Owner/legal review of Privacy and Terms starter copy
 - [ ] Confirm contact routing
-- [ ] Confirm final social preview
-- [ ] Confirm favicon and app icons
+- [x] Confirm final social preview asset is present and served
+- [x] Confirm favicon and app icons are present and served
 - [x] Run lint and production build
 - [x] Review mobile pages
 - [x] Confirm Vercel project connection

@@ -11,6 +11,17 @@
 
 ## Build Checks
 
+- `npm install`: completed from a clean dependency tree; two moderate advisories remain through `next@16.2.7` / nested `postcss`
+- `npm run lint`: passed on June 3 launch-readiness patch
+- `npm run build`: passed on June 3 launch-readiness patch
+- Generated routes now include dynamic `/api/contact` and static public pages for `/`, `/about`, `/contact`, `/local-business-audit`, `/privacy`, `/services`, `/team`, `/terms`, and `/studio-preview-9k4m2x`
+- Production-server route QA at `http://localhost:3001`: `/`, `/studio-preview-9k4m2x`, `/services`, `/local-business-audit`, `/about`, `/team`, `/contact`, `/privacy`, and `/terms` returned `200`
+- Redirect QA: `/audit` returned `307` to `/local-business-audit`
+- Contact API QA without env vars: `POST /api/contact` returned `503` with `code: "unconfigured"` and did not claim delivery
+- Asset QA: `/favicon.ico`, `/icon.png`, `/apple-icon.png`, and `/social/og-image.png` returned `200`
+- Metadata/privacy QA: root metadata includes the `www.maxwellventures.xyz` canonical host and social image; preview route remains `noindex`; `robots.txt` disallows preview; `sitemap.xml` excludes preview and includes public routes
+- In-app Browser QA attempt: blocked by Browser webview attach timeout; fallback HTTP and production-server checks were used
+
 - `npm run lint`: passed after Draft 2 asset insertion and generated QA-profile ignore
 - `npm run build`: passed after Draft 2 asset insertion and team-image loading update
 - Local dev server: use `npm run dev:site` and open `http://localhost:3001` when Hermes/OpenClaw is using `localhost:3000`

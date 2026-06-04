@@ -24,13 +24,15 @@ Production deployment is live on Vercel.
 
 ## DNS Status
 
-The deployment is verified, but the custom domain is not serving yet because Namecheap DNS still points at parking records.
+The deployment is verified on Vercel. Do not change DNS from an agent session;
+domain record changes remain a manual Max approval step.
 
-Current DNS evidence:
+Expected web records when Max approves or verifies DNS:
 
-- `maxwellventures.xyz A` resolves to `192.64.119.225`
-- `www.maxwellventures.xyz CNAME` resolves to `parkingpage.namecheap.com`
-- Email forwarding records exist and should be preserved:
+- Set `A maxwellventures.xyz 76.76.21.21`
+- Set `A www.maxwellventures.xyz 76.76.21.21`
+
+Email forwarding records should be preserved:
   - `MX 10 eforward1.registrar-servers.com`
   - `MX 10 eforward2.registrar-servers.com`
   - `MX 10 eforward3.registrar-servers.com`
@@ -38,12 +40,19 @@ Current DNS evidence:
   - `MX 20 eforward5.registrar-servers.com`
   - `TXT "v=spf1 include:spf.efwd.registrar-servers.com ~all"`
 
-Vercel's project-specific recommendation from `vercel domains inspect`:
-
-- Set `A maxwellventures.xyz 76.76.21.21`
-- Set `A www.maxwellventures.xyz 76.76.21.21`
-
 Do not change nameservers unless the full DNS zone, including email records, is copied first. Updating only the web A records at Namecheap is the safer next step.
+
+## Contact Form Environment
+
+The contact form posts to the private Next.js route at `/api/contact`. It only
+reports success after the configured webhook accepts the inquiry.
+
+Required Vercel environment variables:
+
+- `MAXWELL_CONTACT_WEBHOOK_URL`: Google Apps Script or approved intake webhook URL.
+- `MAXWELL_CONTACT_WEBHOOK_SECRET`: shared secret sent as the `x-maxwell-contact-secret` header.
+
+Do not use `NEXT_PUBLIC_` for either value. Keep `LAUNCH_CHECKLIST.md` contact routing unchecked until a real preview or production inquiry reaches the approved destination.
 
 ## Pre-Deploy Checks
 
